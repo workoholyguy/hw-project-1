@@ -1,0 +1,168 @@
+#root {
+  width: 100vw; /* Full viewport width */
+  min-height: 100vh; /* Allow #root to expand as tall as the content */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start;
+  align-items: center; /* Center horizontally */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.background {
+  position: relative;
+  background-image: url("./assets/project-1-bg-image.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh; /* Ensure the background covers at least the viewport height */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  z-index: 1; /* Make sure the overlay sits above the background image */
+}
+
+.background h1 {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.App {
+  position: relative; /* Ensure content stays above the background and overlay */
+  z-index: 2; /* All content within this div will be above the overlay */
+  color: white; /* Set the text color to white */
+  text-align: center; /* Center the content */
+  padding: 2rem; /* Adjust padding as needed */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Space between the cards */
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* Max 3 cards on larger screens */
+  }
+}
+
+/* Event card container */
+.eventCardClass {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  color: rgb(208, 208, 255);
+  border: white 3px solid;
+  border-radius: 12%;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+  width: 90%;
+  background-color: rgb(51, 51, 51);
+  justify-content: space-between; /* Ensure space between elements */
+  align-items: center;
+}
+
+.button {
+  padding: 3%;
+}
+
+button {
+  padding: 1%;
+}
+
+.eventImage {
+  width: 90%; /* Ensure it takes the right width */
+  height: auto; /* Allow image to resize based on width */
+  max-height: 200px; /* Limit max height to prevent overflow */
+  object-fit: cover; /* Maintain aspect ratio and cover area */
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif; /* Use Orbitron or any techy font */
+  font-size: 3em; /* Size up the font */
+  letter-spacing: 2px; /* Increase letter spacing for that techy look */
+  text-transform: uppercase; /* Make the text uppercase */
+  color: #00ffcc; /* Use neon-like colors for a tech vibe */
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 20px rgba(0, 255, 204, 0.6),
+    0 0 30px rgba(0, 255, 204, 0.4); /* Neon glow effect */
+}
+
+h2 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+h3 {
+  margin-top: 0%;
+  margin-bottom: 2%;
+  font-style: italic;
+  font-size: small;
+}
+h4 {
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ... at the end if text is truncated */
+}
+
+.name {
+  padding-top: 2%;
+}
