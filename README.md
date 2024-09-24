@@ -31,7 +31,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://imgur.com/a/nprQezl' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<video width="100%" controls>
+  <source src="https://i.imgur.com/your-video-id.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <!-- Replace this with whatever GIF tool you used! -->
 
