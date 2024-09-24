@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="background">
       <div className="App">
-        <h1>Welcome to Thes Tech Events! </h1>
+        <h1>Welcome to Thes Tech Events Hub! </h1>
         <div className="card-container">
           <EventCard
             name={"USA Festival of Education"}
@@ -84,15 +84,51 @@ Sept. 25th, 2024
             }
             source={`https://mkeroots.raynordslab.org/index.php/event/teaching-asian-america-in-milwaukee-classrooms/`}
           />
-          {/* <EventCard
-            name={""}
-            description={""}
-            location={``}
-            eventImage={
-              "" // Direct link to image
+          <EventCard
+            name={"Black Hat Fall Online Trainings"}
+            description={
+              "Join us for Black Hat Fall Trainings, a live and interactive online experience in the Eastern Time Zone from November 18 to 21. Develop in-demand cybersecurity skills in technical Trainings taught by expert instructors from around the world. From infrastructure hacking to incident response, there's a course for individuals of all experience levels. Expand your security talent in just 4 days."
             }
-            source={``}
-          /> */}
+            location={`November 18 - 21, 2024\n
+Interactive Online Courses`}
+            eventImage={
+              "https://www.blackhat.com/images/logo.png" // Direct link to image
+            }
+            source={`https://www.blackhat.com/tr-24v/`}
+          />
+          <EventCard
+            name={"Aws Re:invent"}
+            description={
+              "From breakout and builders’ sessions to chalk talks and workshops, re:Invent offers a variety of learning formats and levels so that you can expand your knowledge at your own pace."
+            }
+            location={`DECEMBER 2 – 6, 2024\n LAS VEGAS, NV`}
+            eventImage={
+              "https://reinvent.awsevents.com/content/dam/reinvent/2024/media/cards/expo-village-alt.jpg" // Direct link to image
+            }
+            source={`https://reinvent.awsevents.com/`}
+          />
+          <EventCard
+            name={"Step Into the Future with SXSW"}
+            description={
+              "We look forward to seeing you again!Get ready to embark on another exhilarating SXSW season, as we unveil the initial lineup of featured speakers for the 39th edition of the conference. From debunking AI myths to exploring groundbreaking advancements in gaming, science, and beyond, hear from trailblazers whose insights will inspire and empower you this March."
+            }
+            location={`March 7–15 \n Austin, TX `}
+            eventImage={
+              "https://www.sxsw.com/wp-content/uploads/2024/06/03-08_Sing-Sing_Alejandra-Sol-Casas_22-1.jpg" // Direct link to image
+            }
+            source={`https://www.sxsw.com/`}
+          />
+          <EventCard
+            name={"Catch up on Google I/O"}
+            description={
+              "Check out the highlights and anything you might have missed."
+            }
+            location={`https://www.youtube.com/playlist?list=PL590L5WQmH8doPo8OufXavO2Qu4ysZjyl`}
+            eventImage={
+              "https://io.google/2024/app/images/io24-home-hero-phase4-2-dark.svg" // Direct link to image
+            }
+            source={`https://io.google/2024/`}
+          />
         </div>
       </div>
     </div>

@@ -89,6 +89,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px; /* Space between the cards */
   padding: 20px;
+  /* grid-row: auto; */
 }
 
 @media (min-width: 1200px) {
@@ -157,7 +158,7 @@ h4 {
 
 .description {
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Limit to 3 lines */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis; /* Adds ... at the end if text is truncated */
@@ -165,4 +166,6 @@ h4 {
 
 .name {
   padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
