@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <video width="100%" controls>
-  <source src="https://i.imgur.com/your-video-id.mp4" type="video/mp4">
+  <source src="https://i.imgur.com/abc123.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
