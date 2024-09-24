@@ -36,6 +36,8 @@ Here's a walkthrough of implemented required features:
   Your browser does not support the video tag.
 </video>
 
+[A Link to a Walkthrough](https://imgur.com/a/nprQezl)
+
 <!-- Replace this with whatever GIF tool you used! -->
 
 GIF created with **ScreenToGif**
